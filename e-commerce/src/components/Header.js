@@ -13,8 +13,8 @@ const Header = () => {
     <>
       <header className="header-top-strip py-1">
         <div className="container-xxl">
-          <div className="row">
-            <div className="col-6">
+          <div className="header-top-col row">
+            <div className=" col-6">
               <p className="text-white">
                 Free Shipping Over 500rupees & Free Returns
               </p>
@@ -38,7 +38,7 @@ const Header = () => {
                 <Link className="text-white">Pavan bhai</Link>
               </h2>
             </div>
-            <div className="col-5">
+            <div className="header-bottom-input col-5">
               <div className="input-group">
                 <input
                   type="text"
@@ -54,7 +54,7 @@ const Header = () => {
             </div>
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
-                <div>
+                <div className="header-upper-links">
                   <Link to="/compare" className="d-flex align-items-center gap-10 text-white">
                     <img src={compare} alt="compare" />
                     <p className="mb-0">
@@ -62,7 +62,7 @@ const Header = () => {
                     </p>
                   </Link>
                 </div>
-                <div>
+                <div className="header-upper-links">
                   <Link to="/wishlist" className="d-flex align-items-center gap-10 text-white">
                     <img src={wishlist} alt="wishlist" />
                     <p className="mb-0">
@@ -70,15 +70,15 @@ const Header = () => {
                     </p>
                   </Link>
                 </div>
-                <div>
-                  <Link to="/Login" className="d-flex align-items-center gap-10 text-white">
+                <div className="header-middle-login">
+                  <Link to="/Login" className="header-middle-login d-flex align-items-center gap-10 text-white">
                     <img src={user} alt="user" />
                     <p className="mb-0">
                       Log in <br /> My Account
                     </p>
                   </Link>
                 </div>
-                <div>
+                <div className="header-upper-links">
                   <Link to="/card" className="d-flex align-items-center gap-10 text-white">
                     <img src={cart} alt="cart" />
                     <div className="d-flex flex-column">
@@ -95,7 +95,7 @@ const Header = () => {
       <header className="header-bottom py-3">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
+            <div className="menu-links col-12">
               <div className="menu-bottom d-flex align-items-center gap-30">
                 <div>
                   

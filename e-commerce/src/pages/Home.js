@@ -12,8 +12,8 @@ const Home = () => {
     <>
     <Meta title="Home"/>
     <Container class1="home-wrapper-1 py-5">
-    <div className="row">
-            <div className="col-6">
+    <div className="main-banner-mobile-content row">
+            <div className="main-banner-mobile-content-row col-6">
               <div className="main-banner position-relative">
                 <img
                   src="images/main-banner-1.jpg"
@@ -21,18 +21,18 @@ const Home = () => {
                   alt="main banner"
                 />
                 <div className="main-banner-content position-absolute ">
-                  <h4>SUPERCHARGED FOR PROS.</h4>
-                  <h5>iPad S13+ Pro.</h5>
-                  <p>
+                  <h4 id="photo-title">SUPERCHARGED FOR PROS.</h4>
+                  <h5 id="photo-title-h5">iPad S13+ Pro.</h5>
+                  <p id="photo-title-p">
                     From Emi 5,480/mo.
                     <br />
                     for 24 mon
                   </p>
-                  <Link className="button">Buy Now</Link>
+                  <Link className="button-Buy-Now">Buy Now</Link>
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="main-banner-mobile-content-row col-6">
               <div className="d-flex  flex-wrap  gap-10 justify-content-between align-items-center">
                 <div className="small-banner position-relative">
                   <img
@@ -41,9 +41,9 @@ const Home = () => {
                     alt="main banner"
                   />
                   <div className="small-banner-content position-absolute ">
-                    <h4>SUPERCHARGED FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
+                    <h4 id="photo-title-small">SUPERCHARGED FOR PROS.</h4>
+                    <h5 id="photo-title-h5-small">iPad S13+ Pro.</h5>
+                    <p id="photo-title-p-small">
                       From Emi 5,480/mo.
                       <br />
                       for 24 mon
@@ -57,9 +57,9 @@ const Home = () => {
                     alt="main banner"
                   />
                   <div className="small-banner-content position-absolute ">
-                    <h4>SUPERCHARGED FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
+                    <h4 id="photo-title-small">SUPERCHARGED FOR PROS.</h4>
+                    <h5 id="photo-title-h5-small">iPad S13+ Pro.</h5>
+                    <p id="photo-title-p-small" >
                       From Emi 5,480/mo.
                       <br />
                       for 24 mon
@@ -73,9 +73,9 @@ const Home = () => {
                     alt="main banner"
                   />
                   <div className="small-banner-content position-absolute ">
-                    <h4>SUPERCHARGED FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
+                    <h4 id="photo-title-small">SUPERCHARGED FOR PROS.</h4>
+                    <h5 id="photo-title-h5-small">iPad S13+ Pro.</h5>
+                    <p id="photo-title-p-small">
                       From Emi 5,480/mo.
                       <br />
                       for 24 mon
@@ -89,9 +89,9 @@ const Home = () => {
                     alt="main banner"
                   />
                   <div className="small-banner-content position-absolute ">
-                    <h4>SUPERCHARGED FOR PROS.</h4>
-                    <h5>iPad S13+ Pro.</h5>
-                    <p>
+                    <h4 id="photo-title-small">SUPERCHARGED FOR PROS.</h4>
+                    <h5 id="photo-title-h5-small">iPad S13+ Pro.</h5>
+                    <p id="photo-title-p-small" >
                       From Emi 5,480/mo.
                       <br />
                       for 24 mon
@@ -103,17 +103,17 @@ const Home = () => {
           </div>
     </Container>
     <Container class1="home-wrapper-1 py-5">
-          <div className="row">
+          <div className="tags-of-home-page row">
             <div className="col-12">
-              <div className="servies d-flex align-items-center justify-content-between">
+              <div  className="servies d-flex align-items-center justify-content-between">
                 {
                   services?.map((i,j)=>{
                     return (
-                      <div className=" d-flex align-align-items-center gap-15 key={j}">
-                      <img src={i.image} alt="service" />
+                      <div id="container" className="d-flex align-align-items-center gap-15 key={j}">
+                      <img className="image" src={i.image} alt="service" />
                       <div>
-                        <h6>{i.title}</h6>
-                        <p className="c mb-0">{i.tagline}</p>
+                        <h6 id="title-cards">{i.title}</h6>
+                        <p id="title-card" className=" c mb-0">{i.tagline}</p>
                       </div>
                       </div>
                     )
